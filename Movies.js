@@ -18,7 +18,7 @@ var MovieSchema = new Schema({
       characterName: String,
     }],
     imageURL: { type: String }, 
-  }, { collection : 'movies' });
+  });
 
 MovieSchema.index({ title: 1, releaseDate: 1}, {unique: true});
 // return the model
