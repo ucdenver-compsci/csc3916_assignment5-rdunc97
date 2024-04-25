@@ -34,7 +34,8 @@ const addMovies = [
       {"actorName": "Leonardo DiCaprio", "characterName": "Dom Cobb"},
       {"actorName": "Ellen Page", "characterName": "Ariadne"},
       {"actorName": "Joseph Gordon-Levitt", "characterName": "Arthur"}
-    ]
+    ],
+    "imageURL": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"
   },
   {
     "title": "The Shawshank Redemption",
