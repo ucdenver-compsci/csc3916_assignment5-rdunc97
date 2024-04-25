@@ -28,7 +28,7 @@ const Movie = mongoose.model('Movie', MovieSchema);
 const addMovies = [
   {
     "title": "Inception",
-    "releaseDate": new Date("2010-07-16"),
+    "releaseDate": 2010,
     "genre": "Science Fiction",
     "actors": [
       {"actorName": "Leonardo DiCaprio", "characterName": "Dom Cobb"},
@@ -39,7 +39,7 @@ const addMovies = [
   },
   {
     "title": "The Shawshank Redemption",
-    "releaseDate": new Date("1994-09-23"),
+    "releaseDate": 1994,
     "genre": "Drama",
     "actors": [
       {"actorName": "Tim Robbins", "characterName": "Andy Dufresne"},
@@ -49,7 +49,7 @@ const addMovies = [
   },
   {
     "title": "The Dark Knight",
-    "releaseDate": new Date("2008-07-18"),
+    "releaseDate": 2008,
     "genre": "Action",
     "actors": [
       {"actorName": "Christian Bale", "characterName": "Bruce Wayne / Batman"},
@@ -59,7 +59,7 @@ const addMovies = [
   },
   {
     "title": "Forrest Gump",
-    "releaseDate": new Date("1994-07-06"),
+    "releaseDate": 1994,
     "genre": "Drama",
     "actors": [
       {"actorName": "Tom Hanks", "characterName": "Forrest Gump"},
@@ -69,7 +69,7 @@ const addMovies = [
   },
   {
     "title": "Pulp Fiction",
-    "releaseDate": new Date("1994-10-14"),
+    "releaseDate": 1994,
     "genre": "Crime",
     "actors": [
       {"actorName": "John Travolta", "characterName": "Vincent Vega"},
