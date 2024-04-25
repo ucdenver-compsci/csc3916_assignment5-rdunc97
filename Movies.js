@@ -6,7 +6,7 @@ mongoose.connect("mongodb+srv://ryanduncan02:G5b6t56hD4bUri67@cluster0.cdwdktp.m
 // Movie schema
 var MovieSchema = new Schema({
     title: { type: String, required: true, index: true },
-    releaseDate: Date,
+    releaseDate: String,
     genre: {
       type: String,
       enum: [
