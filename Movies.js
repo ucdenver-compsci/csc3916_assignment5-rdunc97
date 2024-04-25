@@ -6,7 +6,7 @@ mongoose.connect("mongodb+srv://ryanduncan02:G5b6t56hD4bUri67@cluster0.cdwdktp.m
 // Movie schema
 var MovieSchema = new Schema({
     title: { type: String, required: true, index: true },
-    releaseDate: String,
+    releaseDate: { type: Number, min: [1900, 'Must be greater than 1899'], max: [2100, 'Must be less than 2100']},
     genre: {
       type: String,
       enum: [
