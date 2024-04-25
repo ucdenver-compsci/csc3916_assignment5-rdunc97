@@ -17,7 +17,9 @@ var MovieSchema = new Schema({
       actorName: String,
       characterName: String,
     }],
-});
+    imageUrl: { type: String }, 
+  }, { collection : 'movies' });
+
 MovieSchema.index({ title: 1, releaseDate: 1}, {unique: true});
 // return the model
 //module.exports = mongoose.model('Movie', MovieSchema);

@@ -157,6 +157,28 @@ router.route('/movies')
             }
             res.json(movies);
         })
+
+        if(req.query.reviews == true) {
+            const aggregate = [
+                {
+                  $lookup: {
+                    from: 'reviews',
+                    localField: '_id',
+                    foreignField: 'movieId',
+                    as: 'movieReviews'
+                  }
+                },
+                {
+                  $addFields: {
+                    avgRating: { $avg: '$movieReviews.rating' },
+                    imageUrl: "$imageUrl"
+                  }
+                },
+                {
+                  $sort: { avgRating: -1 }
+                }
+              ];
+        }
     })
     .post(authJwtController.isAuthenticated, (req,res) => {
         let newMovie = new Movie;
