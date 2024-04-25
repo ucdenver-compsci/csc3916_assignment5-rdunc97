@@ -171,7 +171,7 @@ router.route('/movies')
                 {
                   $addFields: {
                     avgRating: { $avg: '$movieReviews.rating' },
-                    imageUrl: "$imageUrl"
+                    imageURL: "$imageURL"
                   }
                 },
                 {
